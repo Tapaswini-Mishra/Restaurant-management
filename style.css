@@ -1,0 +1,862 @@
+* {
+    margin: 0;
+    padding: 0;
+    /* box-sizing: border-box;  */
+}
+
+
+.mainbg {
+    height: 60vh;
+    background-image: url(/static/pics/mainbg.jpg) ;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+     }
+
+
+
+
+/*........................ nav bar.........................
+...........................................................
+........................................................... */
+
+
+
+.container {
+    display: flex;
+    justify-content:space-between;
+
+    align-items: center;
+
+    /* background-color: rgba(0, 0, 0, 0.233); */
+
+    width: 100vw;
+    position: sticky;
+
+
+
+
+}
+
+
+.navlists {
+    display: flex;
+    position: relative;
+    /* left: 500px; */
+    align-items: center;
+   
+
+
+
+
+}
+
+
+
+nav ul {
+    height: 8vh;
+    display: flex;
+    align-items: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+}
+
+nav ul li {
+    list-style: none;
+    padding: 0px 20px;
+
+
+}
+
+nav ul ld {
+    list-style: none;
+    padding: 0px 20px;
+
+
+}
+
+nav ul ld:hover{
+    transform: scale(1.2);
+
+}
+
+nav ul li:hover {
+    color: black;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.7);
+   
+    background-color: rgb(183, 0, 0);
+    border: 2px solid rgb(182, 0, 0);
+    border-radius: 40px;
+    transform: scale(1.2);
+   
+
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+
+
+.sociallink {
+    display: flex;
+    position: relative;
+    
+     margin-right: 0vw;
+
+
+}
+
+.sign {
+    position: relative;
+    margin : 0vh 2vw;
+    /* left: 600px; */
+    font-family: adobe-clean, Source Sans Pro, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, sans-serif;
+    
+    
+
+
+}
+.signin{
+    padding: 10px;
+    color: white;
+    font-weight: bolder;
+    margin-right: 10px;
+    background-color: rgba(255, 255, 255, 0);
+    border-radius: 40px;
+    outline: none;
+    font-size: large;
+    border: none;
+
+}
+
+.signup{
+    padding: 10px;
+    color: rgb(0, 0, 0);
+    font-weight: bolder;
+    margin-right: 10px;
+    background-color: rgb(255, 255, 255);
+    border: 2px solid white;
+    border-radius: 40px;
+    outline: none;
+    font-size: large;
+    border: none;
+    cursor: pointer;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+
+
+
+}
+
+.signin:hover, .signin:focus, .signin:active{
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.7);
+    transform: scale(1.2);
+}
+.signup:hover, .signup:focus, .signup:active{
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.7);
+    transform: scale(1.2);
+}
+    
+
+
+
+
+
+
+
+
+
+
+
+
+/* ........................slider and inside items.................................
+...................................................................................
+.................................................................................... */
+
+
+
+
+.slider {
+    margin: 0vh 15vw;
+    background-image: url(/static/pics/bgimage.jpg);
+    height: 70vh;
+    width: 70vw;
+    background-size: 100% ;
+    box-shadow: rgba(149,157 , 165, 0.7);
+    overflow: hidden;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    top: 10vh;
+    animation: changeimage 30s linear infinite;
+
+    }
+
+    @keyframes changeimage {
+        0%{
+            background-image: url(/static/pics/slider1.jpg);
+        }
+        25%{
+            background-image: url(/static/pics/slider2.jpg);
+        }
+        50%{
+            background-image: url(/static/pics/slider3.jpg);
+        }
+        75%{
+            background-image: url(/static/pics/slider4.jpg);
+        }
+        100%{
+            background-image: url(/static/pics/slider5.jpg);
+        }
+        
+    }
+
+
+
+
+
+
+.bgtext {
+    color: white;
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+
+}
+
+.bgtext h1 {
+    font-family: 'Bebas Neue', cursive;
+    text-align: center;
+    font-size: 4.4rem;
+
+}
+
+.searchbar {
+    display: block;
+    width: 80%;
+    position: relative;
+    top: 30px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 1rem;
+    border-radius: 2rem;
+    border: none;
+    outline: none;
+   
+
+
+}
+
+.offer {
+    position: relative;
+    top: -70px;
+
+}
+
+
+.button {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    position: relative;
+    margin: 1rem;
+    top: 100px;
+    left: 80px;
+}
+
+.b1 {
+    padding: 20px;
+    color: white;
+    font-weight: bolder;
+    margin-right: 150px;
+    background-color: rgb(217, 13, 13);
+    border: 2px solid rgb(217, 13, 13);
+    border-radius: 2rem;
+    outline: none;
+    font-size: large;
+    font-family: adobe-clean, Source Sans Pro, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, sans-serif;
+}
+
+
+
+.b1:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0 30px rgba(0, 0, 0, 1);
+}
+
+
+
+
+
+
+
+
+/* ...........................second page {after scroll} .....................................
+..............................................................................................
+..............................................................................................*/
+
+
+
+.bg2{
+    background-image: url(/static/pics/bg1.1.png);
+    height: 150vh;
+    width: 100vw;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    top: -20vh;
+    z-index: -1;
+
+}
+
+.demohead {
+   
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: -100vh;
+    font-family: adobe-clean, Source Sans Pro, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, sans-serif;
+
+
+}
+
+.demohead h1 {
+    
+    
+    font-size: 100px;
+    color: rgb(229, 15, 15);
+
+}
+
+.demohead h3{
+    
+    font-size: 30px;
+
+}
+
+ .threeicons{
+    display: flex;
+    /* margin: 10px 20px; */
+    padding: 50px;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    
+}
+
+
+
+
+     /*........................ 3rd and 4th page {after scroll}............................
+     ........................................................................................
+     ....................................................................................... */
+
+
+.bg3{
+    background-image: url(/static/pics/bg1.2.png);
+    height: 150vh;
+    width: 100vw;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.bg4{
+    background-image: url(/static/pics/bg1.1.png);
+    height: 150vh;
+    width: 100vw;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    margin: 40px;
+}
+
+
+.demo1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 100px 160px;
+    font-family: adobe-clean, Source Sans Pro, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, sans-serif;
+}
+
+.demoinfo {
+    display: flex;
+    flex-direction: column;
+    margin: 50px;
+    justify-content: center;
+
+
+}
+
+.demoinfo h1 {
+    font-size: 40px;
+    padding: 20px;
+}
+
+.demoinfo p {
+    font-size: 20px;
+}
+
+.demobutton {
+    display: flex;
+    justify-content: space-between;
+    margin: 50px;
+}
+
+.b3 {
+    padding: 20px;
+    color: rgb(0, 0, 0);
+    font-weight: bolder;
+    margin-right: 150px;
+    background-color: rgba(255, 255, 255, 0);
+    border-radius: 2rem;
+    border-color: red;
+    border-width: 7px;
+    outline: none;
+}
+
+.b4 {
+    padding: 20px;
+    color: rgb(1, 1, 1);
+    font-weight: bolder;
+    background-color: rgb(255, 255, 255);
+    border-radius: 2rem;
+    border-color: rgb(255, 0, 0);
+    border-width: 7px;
+    outline: none;
+}
+
+.b4:hover {
+    transform: scale(1.3);
+}
+
+.b3:hover {
+    transform: scale(1.3);
+    
+}
+
+
+
+
+/* .................................5th page......................................... */
+
+
+
+
+
+.bg5{
+    height: 110vh;
+    width: 100vw;
+    background-image:url(/static/pics/bg5.jpg) ;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+
+.demohead2 {
+   
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 10vh;
+    
+    font-family: adobe-clean, Source Sans Pro, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, sans-serif;
+
+
+}
+
+.demohead2 h1 {
+    
+    
+    font-size: 100px;
+    color: rgb(229, 15, 15);
+
+}
+
+.demohead2 h3{
+
+    font-weight: bold;
+    font-size: 30px;
+    text-transform: uppercase;
+    margin-bottom: 10vh;
+
+}
+
+
+/* external css: flickity.css */
+
+
+
+.carousel {
+  background: #EEE;
+}
+
+
+.carousel-cell {
+  width: 66vw;
+  height: 60vh;
+  margin-right: 10px;
+  background: rgb(255, 255, 255);
+  background-position: 100%;
+  border-radius: 5px;
+  counter-increment: carousel-cell;
+  
+}
+
+
+.cimg{
+    height: 70vh;
+    
+    position: relative;
+    top: -30vh;
+    right: -15vh;
+    background-size: cover;
+    
+}
+
+/* cell number */
+.carousel-cell:before {
+  display: block;
+  text-align: center;
+  content: counter(carousel-cell);
+  line-height: 200px;
+  font-size: 80px;
+  color: white;
+  
+}
+
+
+
+
+
+
+.bg6{
+    height: 110vh;
+    width: 100vw;
+    position: relative;
+    
+    padding-top: 20vh;
+    background-image:url(/static/pics/bg6.JPG) ;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+
+}
+
+.bg6 .demohead2 h1{
+    font-size: 50px;
+
+}
+
+.carousel2 {
+ 
+    background: #EEE;
+  }
+  
+  .carousel2-cell {
+    width: 18%;
+    height:40vh ;
+    margin-right: 10px;
+    background: rgb(255, 255, 255);
+   
+    border-radius: 5px;
+    counter-increment: carousel-cell;
+  }
+  
+  .carousel2-cell.is-selected {
+    background: rgb(255, 255, 255);
+  }
+  
+  /* cell number */
+  .carousel2-cell:before {
+    display: block;
+    text-align: center;
+    content: counter(carousel-cell);
+    line-height: 200px;
+    font-size: 80px;
+    color: white;
+  }
+
+
+
+
+  .carousel2-cell img{
+   
+    
+    position: relative;
+    top: -30vh;
+    right: -2vh;
+   background-position: 100% 100%;
+
+  }
+
+/* ...........................footer........................................
+............................................................................
+............................................................................. */
+
+
+
+ /* .footer{
+
+
+    display: flex;
+    background-color: rgba(9, 7, 7, 0.863);
+    margin: 10vh 0vh 0vh 0vh;
+    
+}
+
+
+
+
+
+.footer1{
+
+    display: flex;
+    
+ 
+    flex-direction: column;
+    padding: 5vw;
+    font-family: adobe-clean, Source Sans Pro, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, sans-serif;
+    
+   
+}
+
+.footer1 h1{
+    color: rgb(193, 27, 27);
+    padding-bottom: 2vh;
+    
+    
+}
+
+.footer1 a{
+    color: white;
+    text-decoration: none;
+    font-size: medium;
+}
+
+
+
+.email{
+    display: flex;
+    
+}
+
+#email{
+
+    weight: 450px;
+    height: 20px;
+    border: 4px solid white;
+    border-radius: 5px;
+    padding-left: 20px;
+
+}
+
+
+.join{
+    background-color: rgb(193, 27, 27);
+    color: white;
+    font-size: medium;
+    width: 100px;
+    border: 4px solid rgb(193, 27, 27);;
+    border-radius: 5px;
+    margin-left: 25px;
+    
+} */
+
+
+
+
+footer{
+    width: 100vw;
+    overflow: hidden;
+}
+
+section .wave {
+
+    
+    position: relative;
+    width:100vw;
+    height: 227px;
+    padding: 8vh;
+    bottom:0;
+    left: 0;
+    background: url(/static/pics/wave-large.png);
+    animation: move 10s linear infinite;
+    z-index: -1;
+  }
+  
+  section .wave::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 227px;
+    padding: 8vh;
+    top: 0;
+    left: 0;
+    background: url(/static/pics/wave-large.png);
+    opacity: 0.4;
+    animation: move-reversed 10s linear infinite;
+  }
+  section .wave::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 227px;
+    padding: 8vh;
+    top: 0;
+    left: 0;
+    background: url(/static/pics/wave-large.png);
+    opacity: 0.5;
+    animation-delay: -4s;
+    animation: move 10s linear infinite;
+  }
+  
+  @keyframes move {
+    0% {
+      background-position: 0%;
+    }
+    100% {
+      background-position: 1920px;
+    }
+  }
+  @keyframes move-reversed {
+    0% {
+      background-position: 1920px;
+    }
+    100% {
+      background-position: 0%;
+    }
+  }
+
+
+
+.footer {
+display: flex;
+flex-flow: row wrap;
+padding-top: 100px;
+color: rgb(255, 255, 255);
+z-index: 1;
+margin-bottom: 0px;
+
+
+}
+
+.footer > * {
+flex:  1 100%;
+}
+
+.l-footer {
+margin-right: 1.25em;
+margin-bottom: 2em;
+z-index: 1;
+}
+
+h3 {
+font-weight:bold;
+font-size: 20px;
+font-family: adobe-clean, Source Sans Pro, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, sans-serif;
+
+}
+
+.footer ul {
+list-style: none;
+padding-left: 0;
+}
+
+.footer li {
+line-height: 2em;
+}
+
+.footer a {
+text-decoration: none;
+}
+
+.r-footer {
+display: flex;
+flex-flow: row wrap;
+text-decoration: underline;
+z-index: 1;
+
+}
+
+.r-footer > * {
+flex: 1 50%;
+margin-right: 1.25em;
+}
+
+.box a {
+color: rgb(255, 255, 255);
+}
+
+.h-box {
+column-count: 2;
+column-gap: 1.25em;
+}
+
+
+.content{
+    display: flex;
+    padding: 15px 0px;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.social{
+    display: flex;
+    margin-top: 15px;
+    gap: 30px;
+    color: white;
+    text-decoration: none;
+    
+   
+}
+
+.social a span{
+    color: white;
+    font-size: x-large;
+
+}
+
+.b-footer {
+
+text-align: center;
+width: 100vw;
+background-color: rgba(0, 0, 0, 0.838);
+color: rgba(255, 255, 255, 0.71);
+padding: 10px;
+position: relative;
+bottom: 12px;
+right: 70px;
+
+
+}
+
+.l-footer p {
+padding-right: 20%;
+color: rgb(255, 255, 255);
+}   
+
+@media screen and (min-width: 600px) {
+.r-footer > * {
+flex: 1;
+}
+
+.features {
+flex-grow: 2;
+z-index: 1;
+
+}
+
+.l-footer {
+flex: 1 0px;
+}
+
+.r-footer {
+flex: 2 0px;
+}
+}
+
